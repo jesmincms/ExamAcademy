@@ -1,0 +1,229 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  #header .navbar-brand{
+	  position:inherit;
+	  transform:inherit;
+	  padding:15px
+  }
+  .signup_left{
+	  margin-left:20px
+  }
+  .signup_right{
+	  margin-right:20px;
+  }
+  .single_page_status{
+	  margin-left:5px;
+	  margin-right:5px;
+  }
+  .single_page_status{
+	  width:138px;
+  }
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+   #header .navbar-brand{
+	  position:inherit;
+	  transform:inherit;
+	  padding:15px
+  }
+  #header .navbar-nav > li > a{
+	  font-size:14px;
+  }
+  #header .navbar-nav > li > a{
+	  padding-right:5px;
+	  padding-left:5px;
+  }
+  .signup_left{
+	  float:none;
+	  margin:20px auto;
+  }
+  .signup_right{
+	  float:none;
+	  margin: 20px auto;
+  }
+  
+.question_progress{
+	width:50%;
+}
+.single_page_status{
+	width:50%;
+	margin:0;
+	margin-bottom:5px;
+}
+    
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+    #header .navbar-brand{
+	  position:inherit;
+	  transform:inherit;
+	  padding:15px;
+	  width:inherit;
+  }
+  #header .navbar-nav > li > a{
+	  line-height:35px;
+  }
+  #hero_area{
+	  padding-top:40px;
+	  padding-bottom:40px;
+	  padding-left:15px;
+	  padding-right:15px;
+  }
+  h1{
+	  font-size:32px;
+	  line-height:35px;
+  }
+  h4{
+	  font-size:22px;
+	  line-height:25px;
+  }
+  a.button-primary{
+	  padding:20px 30px;
+  }
+  #charterholder_view, #robust_analicis, #personalization, #footer{
+	  padding-top:40px;
+	  padding-bottom:40px;
+  }
+  #unmatched{
+	  padding-top:40px;
+	  padding-bottom:840px;
+  }
+	.title h2 {
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+
+.title {
+  margin-bottom: 30px;
+}
+.char_monitor {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+ .services_item .title {
+  margin-bottom: 35px;
+}
+.single_service img, .single_service {
+  margin-bottom: 20px;
+}
+.single_service h3 {
+  margin-bottom: 10px;
+}
+#press_section{
+	padding-top:40px;
+	padding-bottom:40px;
+	padding-left:15px;
+	padding-right:15px;
+}
+#press_section h3 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.table_wrapper {
+  padding: 20px 10px;
+  width: 90%;
+}
+.table_head h2{
+	font-size:80px;
+}
+.footer_top_menu ul li, .footer_bottom_menu ul li{
+	float:none;
+}
+.footer_top_menu ul li, .footer_bottom_menu ul li a{
+	display:block;
+}
+.footer_top_menu, .footer_bottom_menu{
+	margin-bottom:20px;
+}
+.footer_top_menu ul li a, .footer_bottom_menu ul li a{
+	display:block;
+	text-align:left;
+}
+#header .navbar-brand{
+	padding:0px
+}
+#header .navbar{
+	min-height:auto;
+}
+
+.signup_left{
+  float:none;
+  margin:20px auto;
+  padding-top:80px;
+  padding-bottom:30px;
+}
+.signup_right{
+  float:none;
+  margin: 20px auto;
+}
+.single_form_wrap{
+	width:100%
+}
+.form_wrapper{
+	margin-bottom:50px
+}
+.forms_head{
+	padding-bottom:60px;
+	padding-top:30px;
+}
+.forms_head h5 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.signup_left ul li a{
+	background-size:35px!important;
+	padding-left:50px;
+}
+.signup_left ul li a{
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.login_head{
+	margin-top:50px;
+	margin-bottom:30px;
+}
+
+.question_progress{
+	width:100%;
+}
+.single_page_status{
+	width:100%;
+	margin:0;
+	margin-bottom:5px;
+}
+.create_quiz_footer input, .create_quiz_footer select{
+	margin-bottom:5px;
+}
+.create_quiz_footer input, .create_quiz_footer select{
+	display:block;
+	padding:0px;
+	width:300px!important;
+	margin:5px auto;
+}
+.top_bar{
+	text-align:center
+}
+.top_bar .create_mock_btn, .top_bar .auto_quiz_btn{
+	display:block;
+	margin: 5px auto;
+	width:100%;
+}
+.single_quiz_topic{
+	width:49%;
+	min-height:100px;
+}
+.single_result_summary{
+	margin-bottom:15px;
+}
+.c_quiz_head a{
+	width:100%
+}
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ExamAcademy</title>
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/materialdesignicons.min.css" />
+		<!-- Font -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href="fonts/stylesheet.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+	
+		<!-- Header start -->
+		<header id="header">
+			<nav class="navbar navbar-default navbar-static" id="navbar-example">
+					<div class="navbar-header">
+						<button class="collapsed navbar-toggle" data-target=
+						".bs-example-js-navbar-collapse" data-toggle="collapse"
+						type="button"><span class="sr-only">Toggle
+						navigation</span> <span class="icon-bar"></span>
+						<span class="icon-bar"></span> <span class=
+						"icon-bar"></span></button> <a class="navbar-brand" href=
+						"#"><img src="img/logo.jpg" alt="" /></a>
+					</div>
+					<div class=
+					"collapse navbar-collapse bs-example-js-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="">Dashboard</a></li>
+							<li><a href="">Question Bank</a></li>
+							<li><a href="">Terms</a></li>
+							<li><a href="">Forum</a></li>
+							<li><a href="">Blog</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a aria-expanded="false" aria-haspopup="true"
+								class="dropdown-toggle" data-toggle="dropdown"
+								href="#" role="button">Mike Turner <img src="img/avater.png" alt="" />
+								<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+								<ul aria-labelledby="drop3" class="dropdown-menu user-dropdown">
+									<li>
+										<a href="#">Settings</a>
+									</li>
+									<li>
+										<a href="#">Results</a>
+									</li>
+									<li>
+										<a href="#">Badges</a>
+									</li>
+									<li>
+										<a href="#">Goals</a>
+									</li>
+									<li>
+										<a href="#">Subscription</a>
+									</li>
+									<li>
+										<a href="#">Logout</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a aria-expanded="false" aria-haspopup="true"
+								class="dropdown-toggle more_menu" data-toggle="dropdown"
+								href="#" role="button">...</a>
+								<ul aria-labelledby="drop3" class="dropdown-menu social_dropdown">
+									<li>
+										<a href="#"><i class="mdi mdi-facebook-box"></i>Follow on FB</a>
+									</li>
+									<li>
+										<a href="#"><i class="mdi mdi-twitter"></i>Follow on Twitter</a>
+									</li>
+									<li>
+										<a href="#"><i class="mdi mdi-email"></i>Contact Us</a>
+									</li>
+									<li>
+										<a href="#"><i class="mdi mdi-chart-bar"></i>Stat Tables</a>
+									</li>
+									<li>
+										<a href="#"><i class="mdi mdi-file-document"></i>CFA Overview</a>
+									</li>
+									<li>
+										<a href="#"><i class="mdi mdi-comment-processing"></i>Command Words</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+			</nav><!-- End nav -->
+		</header>
+		<!-- End header -->
+		
+		<!-- Start top bar -->
+		<div class="top_bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 page_title">
+						<h5>CFA Level 1 December 2016</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End top bar -->
+		
+		<!--Createa quiz head -->
+		<div class="c_quiz_head text-center">
+			<div class="container">
+				<div class="row">
+					<h2>Performance Summaries</h2>
+					<p>Results of all quizzes and mock exams</p>
+					<a class="pull-left" href="#"><i class="mdi mdi-keyboard-backspace"></i> Return to Question Bank</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container quiz_results_wrapper">
+			<div class="row result_summary_wrapper text-center">
+				<div class="single_result_summary text-left">
+					<p>Your Score</p>
+					<h2>71%</h2>
+				</div>
+
+
+				<div class="single_result_summary question_used text-left">
+					<p>Questions Used</p>
+					<h2>47%</h2>
+				</div>
+
+			</div>
+			
+			<div class="row">
+				<div class="table-responsive quiz_results_table">
+				  <table class="table">
+					<thead>
+						<tr>
+							<th><select name="" id=""><option value="Name">Name</option><option value="Name">Ascending</option><option value="Name">descending</option></select></th>
+							<th><select name="" id=""><option value="Name">Type</option><option value="Name">Ascending</option><option value="Name">descending</option></select></th>
+							<th><select name="" id=""><option value="Name">Status</option><option value="Name">Ascending</option><option value="Name">descending</option></select></th>
+							<th><select name="" id=""><option value="Name">Time</option><option value="Name">Ascending</option><option value="Name">descending</option></select></th>
+							<th><select name="" id=""><option value="Name">Result</option><option value="Name">Ascending</option><option value="Name">descending</option></select></th>
+							<th><select name="" id=""><option value="Name">Date</option><option value="Name">Ascending</option><option value="Name">descending</option></select></th>
+							<th><select name="" id=""><option value="Name">#ofQuestions</option><option value="Name">Ascending</option><option value="Name">descending</option></select></th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="active">
+							<td>Economics 1</td>
+							<td>Quiz</td>
+							<td><a class="btn-correct" href="#">Completed</a></td>
+							<td>08:44</td>
+							<td>87%</td>
+							<td>12/10/16 </td>
+							<td>20</td>
+							<td><button><i class="mdi mdi-pencil"></i></button><button><i class="mdi mdi-delete"></i></button></td>
+						</tr>
+						<tr>
+							<td>Economics 2</td>
+							<td>Mock</td>
+							<td><a class="btn-correct" href="#">Completed</a></td>
+							<td>08:44</td>
+							<td>87%</td>
+							<td>12/10/16 </td>
+							<td>20</td>
+							<td><button><i class="mdi mdi-pencil"></i></button><button><i class="mdi mdi-delete"></i></button></td>
+						</tr>
+						<tr class="active">
+							<td>Economics 3</td>
+							<td>Quiz</td>
+							<td><a class="btn-progress" href="#">in progress</a></td>
+							<td>08:44</td>
+							<td>87%</td>
+							<td>12/10/16 </td>
+							<td>20</td>
+							<td><button><i class="mdi mdi-pencil"></i></button><button><i class="mdi mdi-delete"></i></button></td>
+						</tr>
+						<tr>
+							<td>Economics 4</td>
+							<td>Quiz</td>
+							<td><a class="btn-correct" href="#">Completed</a></td>
+							<td>08:44</td>
+							<td>87%</td>
+							<td>12/10/16 </td>
+							<td>20</td>
+							<td><button><i class="mdi mdi-pencil"></i></button><button><i class="mdi mdi-delete"></i></button></td>
+						</tr>
+						<tr class="active">
+							<td>Economics 5</td>
+							<td>Quiz</td>
+							<td><a class="btn-correct" href="#">Completed</a></td>
+							<td>08:44</td>
+							<td>87%</td>
+							<td>12/10/16 </td>
+							<td>20</td>
+							<td><button><i class="mdi mdi-pencil"></i></button><button><i class="mdi mdi-delete"></i></button></td>
+						</tr>
+						<tr>
+							<td>Economics 6</td>
+							<td>Mock</td>
+							<td><a class="btn-progress" href="#">in progress</a></td>
+							<td>08:44</td>
+							<td>87%</td>
+							<td>12/10/16 </td>
+							<td>20</td>
+							<td><button><i class="mdi mdi-pencil"></i></button><button><i class="mdi mdi-delete"></i></button></td>
+						</tr>
+						<tr class="active">
+							<td>Economics 7</td>
+							<td>Quiz</td>
+							<td><a class="btn-progress" href="#">in progress</a></td>
+							<td>08:44</td>
+							<td>87%</td>
+							<td>12/10/16 </td>
+							<td>20</td>
+							<td><button><i class="mdi mdi-pencil"></i></button><button><i class="mdi mdi-delete"></i></button></td>
+						</tr>
+						<tr>
+							<td>Economics 8</td>
+							<td>Quiz</td>
+							<td><a class="btn-correct" href="#">Completed</a></td>
+							<td>08:44</td>
+							<td>87%</td>
+							<td>12/10/16 </td>
+							<td>20</td>
+							<td><button><i class="mdi mdi-pencil"></i></button><button><i class="mdi mdi-delete"></i></button></td>
+						</tr>
+					</tbody>
+				  </table>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+			<nav aria-label="" class="text-right all_quiz_pagenation">
+			  <ul class="pagination">
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><a href="#"><i class="mdi mdi-chevron-right"></i></a></li>
+				<li><a href="#" aria-label="Next"><span aria-hidden="true">last »</span></a></li>
+			  </ul>
+			</nav>
+			</div>
+		</div>	
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

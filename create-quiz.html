@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ExamAcademy</title>
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/materialdesignicons.min.css" />
+		<!-- Font -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href="fonts/stylesheet.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+	
+		<!-- Header start -->
+		<header id="header">
+			<nav class="navbar navbar-default navbar-static" id="navbar-example">
+	 
+					<div class="navbar-header">
+						<button class="collapsed navbar-toggle" data-target=
+						".bs-example-js-navbar-collapse" data-toggle="collapse"
+						type="button"><span class="sr-only">Toggle
+						navigation</span> <span class="icon-bar"></span>
+						<span class="icon-bar"></span> <span class=
+						"icon-bar"></span></button> <a class="navbar-brand" href=
+						"#"><img src="img/logo.jpg" alt="" /></a>
+					</div>
+					<div class=
+					"collapse navbar-collapse bs-example-js-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="">Dashboard</a></li>
+							<li><a href="">Question Bank</a></li>
+							<li><a href="">Terms</a></li>
+							<li><a href="">Forum</a></li>
+							<li><a href="">Blog</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a aria-expanded="false" aria-haspopup="true"
+								class="dropdown-toggle" data-toggle="dropdown"
+								href="#" role="button">Mike Turner <img src="img/avater.png" alt="" />
+								<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+								<ul aria-labelledby="drop3" class="dropdown-menu user-dropdown">
+									<li>
+										<a href="#">Settings</a>
+									</li>
+									<li>
+										<a href="#">Results</a>
+									</li>
+									<li>
+										<a href="#">Badges</a>
+									</li>
+									<li>
+										<a href="#">Goals</a>
+									</li>
+									<li>
+										<a href="#">Subscription</a>
+									</li>
+									<li>
+										<a href="#">Logout</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a aria-expanded="false" aria-haspopup="true"
+								class="dropdown-toggle more_menu" data-toggle="dropdown"
+								href="#" role="button">...</a>
+								<ul aria-labelledby="drop3" class="dropdown-menu social_dropdown">
+									<li>
+										<a href="#"><i class="mdi mdi-facebook-box"></i>Follow on FB</a>
+									</li>
+									<li>
+										<a href="#"><i class="mdi mdi-twitter"></i>Follow on Twitter</a>
+									</li>
+									<li>
+										<a href="#"><i class="mdi mdi-email"></i>Contact Us</a>
+									</li>
+									<li>
+										<a href="#"><i class="mdi mdi-chart-bar"></i>Stat Tables</a>
+									</li>
+									<li>
+										<a href="#"><i class="mdi mdi-file-document"></i>CFA Overview</a>
+									</li>
+									<li>
+										<a href="#"><i class="mdi mdi-comment-processing"></i>Command Words</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+			</nav><!-- End nav -->
+		</header>
+		<!-- End header -->
+		
+		<!-- Start top bar -->
+		<div class="top_bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4 page_title">
+						<h5>CFA Level 1 December 2016</h5>
+					</div>
+					
+					<div class="col-sm-8 text-right">
+						<button class="q_submit create_mock_btn" data-toggle="modal" data-target=".create_mock_exam"><i class="mdi mdi-file-document"></i> Create Mock Exam</button>
+						
+						<button class="q_submit auto_quiz_btn" data-toggle="modal" data-target=".auto_quiz_modal"><i class="mdi mdi-auto-fix"></i> Auto-Quiz</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End top bar -->
+		
+		<!--- Create mock exam modal -->
+		<div class="modal fade create_mock_exam" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		  <div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+			 <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> <h4 class="modal-title" id="myLargeModalLabel">Select  a Quiz Topic</h4> </div>
+				<div class="modal-body text-center">
+					<div class="quiz_topic_warapper">
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox"/>
+						<label for="myCheckbox">
+						 1. Ethical and Professional Standards  <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox1"/>
+						<label for="myCheckbox1">
+						 2. Quantitative Methods  <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox2"/>
+						<label for="myCheckbox2">
+						 3. Economics <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox4"/>
+						<label for="myCheckbox4">
+						 4. Financial Reporting and Analysis <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox5"/>
+						<label for="myCheckbox5">
+						 5. Ethical and Professional Standards <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox6"/>
+						<label for="myCheckbox6">
+						 6. Equity Investments <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox7"/>
+						<label for="myCheckbox7">
+						 7. Alternative Investments <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox8"/>
+						<label for="myCheckbox8">
+						 8. Financial Reporting and Analysis <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox9"/>
+						<label for="myCheckbox9">
+						 9. Ethical and Professional Standards <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox10"/>
+						<label for="myCheckbox10">
+						 10. Quantitative Methods <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox11"/>
+						<label for="myCheckbox11">
+						 11. Economics <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox12"/>
+						<label for="myCheckbox12">
+						 12. Financial Reporting and Analysis <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox13"/>
+						<label for="myCheckbox13">
+						 13. Ethical and Professional Standards <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox14"/>
+						<label for="myCheckbox14">
+						 14. Equity Investments <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox15"/>
+						<label for="myCheckbox15">
+						 15. Alternative Investments <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox16"/>
+						<label for="myCheckbox16">
+						 16. Financial Reporting and Analysis <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox17"/>
+						<label for="myCheckbox17">
+						 17. Equity Investments <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					<div class="single_quiz_topic">
+						<input type="checkbox" name="quiz_topic" id="myCheckbox18"/>
+						<label for="myCheckbox18">
+						 18. Alternative Investments <i class="mdi mdi-check-circle-outline"></i>
+						</label>
+					</div>
+					</div>
+					
+					<p class="text-center">We will now create a quiz with 10 questions from the subject</p>
+				</div>
+				<div class="modal-footer"> <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button> <button type="button" class="btn btn-primary">Begin Quiz</button> </div>
+			</div>
+		  </div>
+		</div>
+		
+		<!--- auto quiz modal -->
+		<div class="modal fade auto_quiz_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			 <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> <h4 class="modal-title" id="myLargeModalLabel">Select a Mock Exam Modal</h4> </div>
+				<div class="modal-body text-center">
+					<div class="quiz_topic_warapper auto_quiz_wrapper">
+						<div class="single_quiz_topic">
+							<input type="checkbox" name="quiz_topic" id="autoQuizCheckbox"/>
+							<label for="autoQuizCheckbox">
+								<span>Mock Exam One</span><p>240 Questions<br>6 Hours<br>CFA I Weights<br>Status: <span class="green">Completed</span></p>  <i class="mdi mdi-check-circle-outline"></i>
+							</label>
+						</div>
+						<div class="single_quiz_topic">
+							<input type="checkbox" name="quiz_topic" id="autoQuizCheckbox1"/>
+							<label for="autoQuizCheckbox1">
+								<span>Mock Exam Two</span><p>240 Questions<br>6 Hours<br>CFA I Weights<br>Status: <span class="green">Completed</span></p>  <i class="mdi mdi-check-circle-outline"></i>
+							</label>
+						</div>
+						<div class="single_quiz_topic">
+							<input type="checkbox" name="quiz_topic" id="autoQuizCheckbox2"/>
+							<label for="autoQuizCheckbox2">
+								<span>Mock Exam One</span><p>240 Questions<br>6 Hours<br>CFA I Weights<br>Status: <span class="inprogress">In Progress</span></p>  <i class="mdi mdi-check-circle-outline"></i>
+							</label>
+						</div>
+						<div class="single_quiz_topic">
+							<input type="checkbox" name="quiz_topic" id="autoQuizCheckbox3"/>
+							<label for="autoQuizCheckbox3">
+								<span>Mock Exam One</span><p>240 Questions<br>6 Hours<br>CFA I Weights<br>Status: <span class="new_status">New</span></p>  <i class="mdi mdi-check-circle-outline"></i>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer"> <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button> <button type="button" class="btn btn-primary">Begin Quiz</button> </div>
+			</div>
+		  </div>
+		</div>
+		
+		<!--Createa quiz head -->
+		<div class="c_quiz_head text-center">
+			<div class="container">
+				<div class="row">
+					<h2>Create a Quiz for your specific study needs.</h2>
+					<p>Use the options and filters below to craft the perfect set of questions</p>
+				</div>
+			</div>
+		</div>
+		
+			<div class="container create_quiz_table">
+				<div class="row">
+					<div class="table-responsive">
+					  <table class="table">
+						<thead>
+							<tr>
+								<th></th>
+								<th>E</th>
+								<th>M</th>
+								<th>H</th>
+								<th>C</th>
+								<th>T</th>
+								<th># of Q</th>
+								<th>Correct</th>
+								<th>Incorrect</th>
+								<th>Unanswered</th>
+								<th>%</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="all_q_top">
+								<td><a data-toggle="collapse" href="#all_questions" ><span class="minous"></span><span class="plus"></span></a>All Questions</td>
+								<td class="text-center"><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td>3,234</td>
+								<td>12</td>
+								<td>1,000</td>
+								<td>734</td>
+								<td>73.4 %</td>
+							</tr>
+						</tbody>
+						<tbody id="all_questions" class="collapse active in">
+							<tr class="study_season">
+								<td><a data-toggle="collapse" href="#study_seasons" ><span class="minous"></span><span class="plus"></span></a>Study Session 1</td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td>3,234</td>
+								<td>24</td>
+								<td>1,000</td>
+								<td>734</td>
+								<td>73.4 %</td>
+							</tr>
+							
+							<tbody id="study_seasons" class="collapse active in">
+							
+							<tr class="ssi_wrap">
+								<td><a data-toggle="collapse" href="#ssi_one" ><span class="minous"></span><span class="plus"></span></a> <input name="check-box" type="checkbox" type="checkbox" /> SS1: Lorem ipsum dolor sit amet</td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td>119</td>
+								<td>5</td>
+								<td>10</td>
+								<td>0</td>
+								<td>0%</td>
+							</tr>
+							<tbody id="ssi_one" class="collapse active">
+							<tr class="ssi_wrap">
+								<td><a data-toggle="collapse" href="#ssi_one" ><span class="minous"></span><span class="plus"></span></a>  SS1: Lorem ipsum content </td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td>55</td>
+								<td>2</td>
+								<td>2</td>
+								<td>0</td>
+								<td>19.05 %</td>
+							</tr>
+							</tbody>
+							
+							<tr class="ssi2_wrap">
+								<td><a data-toggle="collapse" href="#ssi_two" ><span class="minous"></span><span class="plus"></span></a> <input name="check-box" type="checkbox" type="checkbox" /> SS2: Lorem ipsum dolor sit amet</td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td>392</td>
+								<td>0</td>
+								<td>5</td>
+								<td>7</td>
+								<td class="highlight">19.05 %</td>
+							</tr>
+							<tbody id="ssi_two" class="collapse active">
+							<tr class="ssi2_wrap">
+								<td><a data-toggle="collapse" href="#ssi_two" ><span class="minous"></span><span class="plus"></span></a>  SS2: Lorem ipsum content </td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td>55</td>
+								<td>2</td>
+								<td>2</td>
+								<td>0</td>
+								<td>19.05 %</td>
+							</tr>
+							</tbody>
+							
+							<tr class="ss3_wrap">
+								<td><a data-toggle="collapse" href="#ssi_three" ><span class="minous"></span><span class="plus"></span></a> <input name="check-box" type="checkbox" type="checkbox" /> SS3: Curabitur dolor neque</td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td>20</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0%</td>
+							</tr>
+							<tbody  id="ssi_three" class="collapse in">
+								<tr class="r33">
+									<td><a data-toggle="collapse" href="#r33_one" ><span class="minous"></span><span class="plus"></span></a> <input name="check-box" type="checkbox" type="checkbox" /> R33: Curabitur dolor neque</td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td>37</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0%</td>
+								</tr>
+								<tr class="r33">
+									<td><a data-toggle="collapse" href="#r33_one" ><span class="minous"></span><span class="plus"></span></a> <input name="check-box" type="checkbox" type="checkbox" /> R34: Lorem ipsum dolor sit amet</td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td>194</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0%</td>
+								</tr>
+							</tbody>
+							
+							<tr class="ssi_wrap">
+								<td><a data-toggle="collapse" href="" ><span class="minous"></span><span class="plus"></span></a> <input name="check-box" type="checkbox" type="checkbox" /> SS11: Lorem ipsum dolor sit amet</td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td>182</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0%</td>
+							</tr>
+							
+							<tr class="ssi_wrap">
+								<td><a data-toggle="collapse" href="#r33_in" ><span class="minous"></span><span class="plus"></span></a> <input name="check-box" type="checkbox" type="checkbox" /> SS12: Lorem ipsum dolor sit amet</td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td>51</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0%</td>
+							</tr>
+							
+							<tbody id="r33_in" class="collapse in">
+								<tr class="r33_bottom">
+									<td><a data-toggle="collapse" href="#r33_acc"><span class="minous"></span><span class="plus"></span></a> <input name="check-box" type="checkbox" type="checkbox" />R33: Curabitur dolor neque</td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td>82</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0%</td>
+								</tr>
+							</tbody>
+							
+							<tbody id="r33_acc" class="collapse in">
+							
+								<tr class="r33 r33_dark">
+									<td><a data-toggle="collapse" href=""><span class="minous"></span><span class="plus"></span></a> <input name="check-box" type="checkbox" type="checkbox" /> R34: Lorem ipsum dolor sit amet</td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td>82</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0%</td>
+								</tr>
+								<tr class="r33 r33_dark">
+									<td><a data-toggle="collapse" href=""><span class="minous"></span><span class="plus"></span></a> <input name="check-box" type="checkbox" type="checkbox" /> R34: Lorem ipsum dolor sit amet</td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+									<td>12</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0%</td>
+								</tr>
+							</tbody>
+							
+							<tbody>
+								<tr class="ssi_wrap">
+								<td><a data-toggle="collapse" href="" ><span class="minous"></span><span class="plus"></span></a> <input name="check-box" type="checkbox" type="checkbox" /> SS1: Lorem ipsum dolor sit amet</td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td><input name="check-box" type="checkbox" type="checkbox" /></td>
+								<td>119</td>
+								<td>5</td>
+								<td>10</td>
+								<td>0</td>
+								<td>0%</td>
+							</tr>
+							</tbody>
+							
+							</tbody>
+						</tbody>
+						
+					  </table>
+					</div>
+				</div>
+			</div>
+			<!-- End quiz page table -->
+			
+
+				<div class="container quiz_preperance">
+					<div class="row">
+						<h2>Preferences</h2>
+					</div>
+					
+					<div class="table-responsive">
+					  <table class="table">
+						<thead>
+							<tr>
+								<th>Subject Weightings</th>
+								<th>Timer</th>
+								<th>Questions</th>
+								<th>Explanations</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="active">
+								<td><input name="check-box" type="checkbox" /> <span>CFA Level Weight</span></td>
+								<td><input name="check-box" type="checkbox" /> <span>Show Question Time</span></td>
+								<td><input name="check-box" type="checkbox" /> <span>Only unanswered questions</span></td>
+								<td><input name="check-box" type="checkbox" /> <span>Show explanations immediately</span></td>
+							</tr>
+							<tr>
+								<td><input name="check-box" type="checkbox" /> <span>Custom</span></td>
+								<td><input name="check-box" type="checkbox" /> <span>how Exam Time</span></td>
+								<td><input name="check-box" type="checkbox" /> <span>Only all unanswered and incorrect</span></td>
+								<td><input name="check-box" type="checkbox" /> <span>Show explanations later</span></td>
+							</tr>
+						</tbody>
+						
+					  </table>
+					</div>
+				</div>
+				
+				<div class="container create_quiz_footer">
+					<div class="row">
+							<form action="">
+								<input type="text" placeholder="Name"/>
+								<select name="" id="">
+									<option value="">Select Number of Questions </option>
+									<option value="Opt one">option one</option>
+								</select>
+								<input type="submit" value="Create Quiz"/>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
